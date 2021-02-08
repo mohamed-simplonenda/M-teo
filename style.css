@@ -1,0 +1,36 @@
+body {
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.box-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#city {
+  background-color: turquoise;
+}
+#temp {
+  background-color: teal;
+}
+#humidity {
+  background-color: blue;
+}
+#wind {
+  background-color: brown;
+}
