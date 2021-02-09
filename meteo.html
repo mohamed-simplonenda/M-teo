@@ -22,27 +22,54 @@
   ></script>
   <link rel="stylesheet" href="style.css" />
   <body>
-    <div class="container">
-      <div class="row justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="meteo.html">
+          <img src="img/sun-light-cloud-transparent_107791-892.jpg" width="40" height="30">
+        </a>a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active" aria-current="page" href="meteo.html">Méteo</a>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container inputcity">
+      <div class="d-flex justify-content-center">
         <form>
           <div class="form-group">
             <input type="text" class="form-control" id="inputCity" />
           </div>
-          <button type="submit" class="btn btn-info btn-block">
+          <div class="d-flex justify-content-center">
+          <button type="submit" class="btn ">
             Rechercher
           </button>
+        </div>
         </form>
         </div>
-        <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
-          <div class="box-container">
+      </div>
+        
+          <div class="container">
+            <div class="d-flex justify-content-center ">
+            <div class="row">
             <div id="city" class="box"></div>
             <div id="temp" class="box"></div>
             <div id="humidity" class="box"></div>
             <div id="wind" class="box"></div>
+          
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+
+        <footer>
+          <p>Copyright © 2020 Tous droits réservés | Cette application est réalisé avec par Mohamed Mansour</p>
+        </footer>
+      
+   
 
     <script src="app.js"></script>
   </body>

@@ -1,36 +1,83 @@
 body {
-  background-image: url();
+  background-image: url(img/sun-shining-blue-sky-with-white-clouds-realistic-background_1284-10467.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  overflow-y: hidden;
 }
-.box-container {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
+.container {
+  justify-content: center;
 }
 
 .box {
   width: 150px;
-  height: 150px;
+  height: 250px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   color: white;
+  margin: 20px;
+}
+
+.btn {
+  text-decoration: inherit;
+  border-radius: 25px !important;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-family: "Open Sans", "Arial" !important;
+  line-height: 1.4em !important;
+  font-size: 15px;
+  padding: 10px 25px 10px 25px !important;
+  margin-top: 15px;
+  width: auto;
+  color: white;
+  background-color: #293744 !important;
+}
+.btn :hover {
+  background-color: #0075c96b !important;
+  color: white;
+}
+.inputcity {
+  margin-top: 50px;
+}
+.form-group > input,
+.form-control {
+  border: none;
+  border-bottom: 2px solid #293744;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  outline: none;
+  background-color: transparent;
 }
 
 #city {
-  background-color: turquoise;
+  background-color: rgba(117, 122, 117, 0.4);
 }
 #temp {
-  background-color: teal;
+  background-color: rgba(42, 44, 42, 0.7);
 }
 #humidity {
-  background-color: blue;
+  background-color: rgba(44, 48, 44, 0.7);
 }
 #wind {
-  background-color: brown;
+  background-color: rgba(59, 61, 59, 0.4);
+}
+
+footer {
+  background-color: #293744;
+  clear: both;
+  font-size: 12px;
+  margin-top: 124px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 100%;
+  color: #fff;
 }
