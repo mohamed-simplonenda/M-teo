@@ -1,6 +1,6 @@
 const APIKEY ='2ce659b9c25fc6fe3a07de4ca71d1dac';
 
-
+/**Appel a l'API openwheather avec ville en permettre de fonction */
 let apiCall = function (city) {
     let url =`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric&lang=fr`;
 fetch(url)
@@ -10,7 +10,7 @@ response.json()
     console.log(data);
 document.querySelector('#city').innerHTML= data.name ;
 document.querySelector('#temp').innerHTML= 
-"<i class='fas fa-thermometer-half'></i>" + data.main.temp + '°'   ;
+"<i class='fas fa-thermometer-half'></i>" + data.main.temp + '°C'   ;
 document.querySelector('#humidity').innerHTML= 
 "<i class='fas fa-tint'></i>" +data.main.humidity + '%' ;
 document.querySelector('#wind').innerHTML= 
@@ -20,7 +20,7 @@ document.querySelector('#wind').innerHTML=
     .catch((err) => console.log('Erreur : ' + err));
 };
     
-
+/**Ecouteur d'evennement sur la soumission du formilaire */
     document.querySelector('form').addEventListener('submit', function (e) {
 e.preventDefault();
 let ville = document.querySelector('#inputCity').value;
@@ -28,5 +28,5 @@ apiCall(ville);
 
     });
 
-    
+    /**Appel par defaut au chargement de la page */
     apiCall('Tunisie');
